@@ -6,9 +6,6 @@ pipeline {
             args '-v /root/.m2:/root/.m2' 
         }
     }
-    environment {
-    	hudson.plugins.git.GitSCM.ALLOW_LOCAL_CHECKOUT='true'
-    }
     stages {
         stage('Build') { 
             steps {
